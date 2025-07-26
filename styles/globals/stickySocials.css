@@ -1,0 +1,90 @@
+.sticky-socials {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sticky-socials ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  width: fit-content;
+}
+
+.sticky-socials li {
+  cursor: pointer;
+  /* object-fit: cover */
+  transition: 0.15s ease-out;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: fit-content;
+}
+
+.sticky-socials li a:first-of-type {
+  height: 100%;
+  width: fit-content;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.3s;
+}
+
+/* .sticky-socials li svg {
+  margin-right: 10px;
+} */
+
+.sticky-socials li .label {
+  position: absolute;
+  height: 50%;
+  width: fit-content;
+  color: #fff;
+  font-size: 20px;
+  transform: translateX(-100%);
+
+  display: flex;
+  align-items: center;
+
+  z-index: -1;
+  padding: 10px;
+
+  transition: all 0.3s;
+}
+
+.sticky-socials li:hover .label {
+  transform: translateX(calc(50%));
+}
+
+.sticky-socials li:last-of-type:hover .label {
+  transform: translateX(calc(50% - 1px));
+}
+
+.sticky-socials li:first-of-type .label {
+  background-color: #1666ce;
+}
+
+.sticky-socials li:last-of-type .label {
+  background-color: #1a9146;
+}
+
+.sticky-socials li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sticky-socials ul li:nth-child(1) {
+  background-color: #1877f2;
+}
+
+.sticky-socials ul li:nth-child(2) {
+  background-color: #25d366;
+}
