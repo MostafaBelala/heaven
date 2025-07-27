@@ -2,8 +2,8 @@
    1. On-Page SEO - DONE
    2. Off-Page SEO
 2. JS Actions & DOM Manip
-3. Responsive
-4. git, github (BigData Youtube Channel` Video (6 hours)) -> DONE, vercel
+3. Responsive -> DONE
+4. git, github (BigData Youtube Channel` Video (6 hours)) -> DONE, vercel -> DONE
 5. Search (if founded) -> not found
 6. upload the actual data
 7. clean code
@@ -13,5 +13,6 @@
 
 -> Responsive:
 
-1. -> sliders
-2. -> our-works page
+1. -> sliders -> DONE
+2. -> our-works page -> DONE
+3. -> after actuak data
