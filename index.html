@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Modern+Antiqua&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="imgs/Heaven Logo.jpg" />
+    <title>برجولات خشبية أنيقة للحدائق والأسطح | Heaven Pergolas</title>
+    <meta
+      name="description"
+      content="هيڤن للبرجولات الخشبية – أناقة وجودة لروفك وحديقتك.
+نقدم أرقى تصميمات البرجولات الخشبية للروف، الحدائق، وحمامات السباحة.
+تصميمات مودرن وكلاسيك حسب ذوقك، متاح جميع أنواع الخشب بأعلى جودة وأفضل سعر.
+"
+    />
+    <link rel="stylesheet" href="styles/globals/footer.css" />
+    <link rel="stylesheet" href="styles/globals/components.css" />
+    <link rel="stylesheet" href="styles/globals/header.css" />
+    <link rel="stylesheet" href="styles/globals/general.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="styles/globals/stickySocials.css" />
+    <link rel="stylesheet" href="styles/home/hero-section.css" />
+    <link rel="stylesheet" href="styles/home/our-works.css" />
+    <link rel="stylesheet" href="styles/home/projects.css" />
+    <link rel="stylesheet" href="styles/home/about.css" />
+    <link rel="stylesheet" href="styles/home/contact.css" />
+    <link rel="stylesheet" href="styles/globals/footer.css" />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script defer src="./scripts/script.js" type="module"></script>
+    <script defer src="./scripts/slider-utils.js" type="module"></script>
+    <script defer src="./scripts/slider.js" type="module"></script>
+    <script defer src="./scripts/slidersData.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <!-- <a href="#"> -->
+          <div class="logo">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-building2 h-6 w-6"
+              style="color: rgb(245, 245, 241)"
+            >
+              <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
+              <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
+              <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
+              <path d="M10 6h4"></path>
+              <path d="M10 10h4"></path>
+              <path d="M10 14h4"></path>
+              <path d="M10 18h4"></path>
+            </svg>
+            <div class="logo-text">
+              <h1>heaven</h1>
+              <h4>pergolas</h4>
+            </div>
+          </div>
+          <!-- </a> -->
+          <ul class="nav__links">
+            <li><a href="/">الرئيسية</a></li>
+            <li><a href="/our-works.html" target="_blank">أعمالنا</a></li>
+            <li><a href="/#projects">أفكار مشاريع</a></li>
+            <li><a href="/#about">عنا</a></li>
+            <li><a href="/#testimonials">رأي العملاء</a></li>
+            <li><a href="/#contact">التواصل</a></li>
+          </ul>
+          <a href="#contact">
+            <button class="btn-quote">
+              <img src="imgs/telephone.png" alt="" />
+              <div class="btn-quote__text">احصل على عرض</div>
+            </button>
+          </a>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="hero-section" id="hero-section">
+      <div class="container">
+        <div class="hero-section__text">
+          <h1>برجولات خشبية مصممة خصيصًا لك</h1>
+          <h2 class="auto-typing">
+            نصمم وننفذ برجولات مخصصة تناسب ذوقك، باستخدام أجود أنواع الخشب
+            الطبيعي
+          </h2>
+        </div>
+        <div class="hero-section__buttons">
+          <button>
+            <a
+              href="https://wa.me/201146184055?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%0A%D8%B9%D9%86%D8%AF%D9%8A%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D8%A7%D9%84%D8%A8%D8%B1%D8%AC%D9%88%D9%84%D8%A7%D8%AA%0A%D9%85%D9%85%D9%83%D9%86%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D9%88%D8%A7%D9%84%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1%20%D9%84%D9%88%20%D8%B3%D9%85%D8%AD%D8%AA%D8%9F"
+              >احصل على عرض سعر</a
+            >
+          </button>
+          <button class="ideas-btn">
+            <a href="#projects">أفكار برجولات</a>
+          </button>
+        </div>
+      </div>
+      <div class="about-us"></div>
+      <div class="overlay"></div>
+      <video
+        src="https://res.cloudinary.com/dvv3p4fh0/video/upload/v1753605105/pergola_icvnhe.mp4"
+        muted
+        autoplay
+        playsinline
+        loop
+      ></video>
+    </section>
+    <section class="our-works translate-section" id="our-works">
+      <div class="container">
+        <div class="main-component"><span>أعمالنا</span></div>
+        <h2 class="main-component__under-text">
+          تصفح أعمالنا السابقة لاكتشاف تنوع التصاميم، والتأكد من احترافيتنا في
+          تحويل المساحات المفتوحة إلى أماكن مريحة وأنيقة.
+        </h2>
+      </div>
+      <div class="works-pictures slider">
+        <div class="overflow-container">
+          <div class="slider__container"></div>
+        </div>
+      </div>
+      <div class="slider__btns">
+        <button class="btn__right down-arrow">&#8594;</button>
+        <a href="./our-works.html" class="our-works__more-btn"
+          ><button>المزيد</button></a
+        >
+        <button class="btn__left down-arrow">&#8592;</button>
+      </div>
+      <div class="dots"></div>
+    </section>
+    <section class="projects slider-section translate-section" id="projects">
+      <div class="container">
+        <div class="main-component" style="width: 264px">
+          <span>أفكار مشاريع</span>
+        </div>
+        <h2 class="main-component__under-text">
+          في <span style="color: rgb(0, 74, 11)">هيڤن</span>... جمعنالك مجموعة
+          من أفكار المشاريع المُلهمة علشان تساعدك في اختيار التصميم المناسب
+          لمساحتك، سواء كانت روف، حديقة، أو مساحة بجانب حمام السباحة.
+        </h2>
+      </div>
+      <div class="grid"></div>
+      <button>المزيد</button>
+    </section>
+    <section class="about slider-section translate-section" id="about">
+      <div class="container">
+        <div class="main-component"><span>عنا</span></div>
+      </div>
+      <div class="container">
+        <div class="about-content">
+          <div class="tarheeb">
+            <p class="auto-typing">
+              "مرحبًا بكم في HEAVEN، الشركة المتخصصة في تصميم وتنفيذ البرجولات
+              بأنواعها المختلفة. بنقدّم لك كل ما تتخيله في عالم البرجولات —
+              مودرن، كلاسيك، خشب، معدنية، مغطاة أو مفتوحة — وبننفذ حسب الطلب
+              بأعلى جودة وأفضل سعر. شرف لينا نخدم عملائنا في جميع محافظات مصر!"
+            </p>
+          </div>
+          <div class="under-tarheeb">
+            <p class="title">من نحن</p>
+            <p class="description">
+              نسعى في
+              <span style="color: #106a64; font-weight: bold">HEAVEN</span>
+              إلى تقديم حلول متكاملة في مجال البرجولات، من خلال تنفيذ مخصص يناسب
+              ذوقك واحتياجك. نلتزم باستخدام خامات مستوردة، جودة عالية، وتنفيذ
+              سريع بأسعار تنافسية، مما يتيح لك التمتع بتجربة فريدة تضيف لمسة
+              فخامة وراحة لأي مكان — سواء كان حديقة، روف، أو مساحة خارجية.
+            </p>
+
+            <div class="bullets">
+              <div class="dot"></div>
+              <hr />
+              <div class="dot"></div>
+            </div>
+          </div>
+          <div class="ro'ia">
+            <p class="title">رؤيتنا</p>
+            <p class="description">
+              نطمح أن نكون الخيار الأول في مصر لكل من يبحث عن برجولات تجمع بين
+              الأناقة والمتانة. نوفّر لك خدمة المعاينة بأقل الأسعار، ونحرص على
+              تنفيذ تصميمك بدقة، مع الاهتمام بأدق التفاصيل، لتحصل على نتيجة
+              تتفوق على توقعاتك.
+            </p>
+          </div>
+        </div>
+        <div class="team-image">
+          <img
+            src="imgs/favourites/WhatsApp Image 2025-03-04 at 13.28.11_4aae42e2.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="numbers container">
+        <div class="experience">
+          <h1 class="increasing-number" data-number="12">+ <span>0</span></h1>
+          <p>months</p>
+        </div>
+        <div class="customers">
+          <h1 class="increasing-number" data-number="5">+ <span>0</span></h1>
+          <p>customers</p>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="testimonials" id="testimonials"></section> -->
+    <section class="contact slider-section translate-section" id="contact">
+      <div class="main-component" style="width: 264px">
+        <span>تواصل معنا</span>
+      </div>
+      <div class="container">
+        <form>
+          <input type="hidden" name="_template" value="table" />
+          <h1>أرسل لنا رسالة</h1>
+          <div class="nameField">
+            <label for="name">الاسم</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="phoneField">
+            <label for="phone-number">رقم التليفون</label>
+            <input type="tel" id="phone-number" name="phone" required />
+          </div>
+          <div class="messageField">
+            <label for="message">رسالة</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="sumbit">
+            <input type="submit" value="ارسال " />
+          </div>
+        </form>
+        <div class="contact-methods">
+          <div class="first-two-contact-methods">
+            <div class="email">
+              <div class="logo">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  height="40px"
+                  width="40px"
+                  version="1.1"
+                  id="_x32_"
+                  viewBox="0 0 512 512"
+                  xml:space="preserve"
+                  fill="#000000"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <g id="SVGRepo_iconCarrier">
+                    <style type="text/css">
+                      .st0 {
+                        fill: rgb(255, 170, 113);
+                      }
+                    </style>
+                    <g>
+                      <path
+                        class="st0"
+                        d="M510.746,110.361c-2.128-10.754-6.926-20.918-13.926-29.463c-1.422-1.794-2.909-3.39-4.535-5.009 c-12.454-12.52-29.778-19.701-47.531-19.701H67.244c-17.951,0-34.834,7-47.539,19.708c-1.608,1.604-3.099,3.216-4.575,5.067 c-6.97,8.509-11.747,18.659-13.824,29.428C0.438,114.62,0,119.002,0,123.435v265.137c0,9.224,1.874,18.206,5.589,26.745 c3.215,7.583,8.093,14.772,14.112,20.788c1.516,1.509,3.022,2.901,4.63,4.258c12.034,9.966,27.272,15.45,42.913,15.45h377.51 c15.742,0,30.965-5.505,42.967-15.56c1.604-1.298,3.091-2.661,4.578-4.148c5.818-5.812,10.442-12.49,13.766-19.854l0.438-1.05 c3.646-8.377,5.497-17.33,5.497-26.628V123.435C512,119.06,511.578,114.649,510.746,110.361z M34.823,99.104 c0.951-1.392,2.165-2.821,3.714-4.382c7.689-7.685,17.886-11.914,28.706-11.914h377.51c10.915,0,21.115,4.236,28.719,11.929 c1.313,1.327,2.567,2.8,3.661,4.272l2.887,3.88l-201.5,175.616c-6.212,5.446-14.21,8.443-22.523,8.443 c-8.231,0-16.222-2.99-22.508-8.436L32.19,102.939L34.823,99.104z M26.755,390.913c-0.109-0.722-0.134-1.524-0.134-2.341V128.925 l156.37,136.411L28.199,400.297L26.755,390.913z M464.899,423.84c-6.052,3.492-13.022,5.344-20.145,5.344H67.244 c-7.127,0-14.094-1.852-20.142-5.344l-6.328-3.668l159.936-139.379l17.528,15.246c10.514,9.128,23.922,14.16,37.761,14.16 c13.89,0,27.32-5.032,37.827-14.16l17.521-15.253L471.228,420.18L464.899,423.84z M485.372,388.572 c0,0.803-0.015,1.597-0.116,2.304l-1.386,9.472L329.012,265.409l156.36-136.418V388.572z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <h3>الإيميل</h3>
+              <p class="details">info@heavenpergolas.com</p>
+            </div>
+            <div class="call-us">
+              <div class="logo">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40px"
+                  height="40px"
+                  viewBox="0 -0.5 25 25"
+                  fill="none"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.36343 6.36195C7.24343 5.43495 7.55443 5.17495 7.92943 5.05395C8.18895 4.98595 8.46112 4.98217 8.72243 5.04295C9.06643 5.14295 9.15743 5.21895 10.2854 6.34295C11.2764 7.32995 11.3754 7.43695 11.4704 7.62995C11.6521 7.96873 11.6805 8.36894 11.5484 8.72995C11.4484 9.00495 11.3064 9.18695 10.7054 9.78995L10.3134 10.183C10.2105 10.2876 10.1863 10.4464 10.2534 10.577C11.1244 12.0628 12.36 13.3019 13.8434 14.177C14.0142 14.2684 14.2245 14.2389 14.3634 14.104L14.7404 13.733C14.9734 13.4941 15.2202 13.2691 15.4794 13.059C15.8866 12.809 16.3939 12.7867 16.8214 13C17.0304 13.1 17.0994 13.162 18.1214 14.182C19.1754 15.233 19.2054 15.266 19.3214 15.507C19.5397 15.9059 19.5374 16.3891 19.3154 16.786C19.2024 17.01 19.1334 17.091 18.5404 17.697C18.1824 18.063 17.8454 18.397 17.7914 18.446C17.3022 18.851 16.6746 19.0497 16.0414 19C14.883 18.8944 13.7617 18.5363 12.7564 17.951C10.5296 16.7711 8.63383 15.0521 7.24243 12.951C6.93937 12.5112 6.66994 12.0492 6.43643 11.569C5.81001 10.4953 5.48653 9.27189 5.50043 8.02895C5.54825 7.37871 5.86008 6.77637 6.36343 6.36195Z"
+                      stroke="rgb(255, 170, 113)"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <h3>اتصل بنا</h3>
+              <p class="details">
+                <a
+                  href="https://api.whatsapp.com/send/?phone=201146184055&text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85+%D8%B9%D9%84%D9%8A%D9%83%D9%85%0A%D8%B9%D9%86%D8%AF%D9%8A+%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%A8%D8%AE%D8%B5%D9%88%D8%B5+%D8%AA%D8%B5%D9%85%D9%8A%D9%85+%D8%A7%D9%84%D8%A8%D8%B1%D8%AC%D9%88%D9%84%D8%A7%D8%AA%0A%D9%85%D9%85%D9%83%D9%86+%D8%A3%D8%B9%D8%B1%D9%81+%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84+%D9%88%D8%A7%D9%84%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1+%D9%84%D9%88+%D8%B3%D9%85%D8%AD%D8%AA%D8%9F&type=phone_number&app_absent=0"
+                  >01146184055
+                  <span style="color: var(--olive-green)">＋</span></a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="second-two-contact-methods">
+            <div id="location">
+              <!-- <div class="logo">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40px"
+                  height="40px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke=""
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke="#CCCCCC"
+                    stroke-width="0.144"
+                  />
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                      stroke="rgb(255, 170, 113)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                      stroke="rgb(255, 170, 113)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <h3>المكان</h3>
+              <address class="details">القليوبية, مصر</address> -->
+            </div>
+            <div class="hours">
+              <div class="logo">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40px"
+                  height="40px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M12 7V12L14.5 13.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                      stroke="rgb(255, 170, 113)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <h3>ساعات العمل</h3>
+              <p class="details">24 ساعة</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="translate-section">
+      <div class="container">
+        <div class="company">
+          <h1>HEAVEN</h1>
+          <h2 class="company__description">
+            نُبدع في تصميم مساحات معيشة خارجية تُضفي جمالًا وراحة على حياتك، من
+            خلال شرفات وبرجولات مصممة خصيصًا لتناسب ذوقك واحتياجاتك. نعتمد على
+            أعلى معايير الحرفية، ونستخدم مواد فاخرة تضمن المتانة والأناقة. بخبرة
+            تمتد لأكثر من 12 شهرًا.
+          </h2>
+          <p class="certifications">مرخّص • مؤمَّن • مكفول</p>
+        </div>
+        <div class="services">
+          <h2>الخدمات</h2>
+          <ul>
+            <li>البرجولات السكنية</li>
+            <li>المشاريع التجارية</li>
+            <li>تصميم حسب الطلب</li>
+            <li>الصيانة والإصلاح</li>
+          </ul>
+        </div>
+        <div class="contacts">
+          <h2>للتواصل</h2>
+          <ul>
+            <li>
+              <a
+                href="https://api.whatsapp.com/send/?phone=201146184055&text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85+%D8%B9%D9%84%D9%8A%D9%83%D9%85%0A%D8%B9%D9%86%D8%AF%D9%8A+%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1+%D8%A8%D8%AE%D8%B5%D9%88%D8%B5+%D8%AA%D8%B5%D9%85%D9%8A%D9%85+%D8%A7%D9%84%D8%A8%D8%B1%D8%AC%D9%88%D9%84%D8%A7%D8%AA%0A%D9%85%D9%85%D9%83%D9%86+%D8%A3%D8%B9%D8%B1%D9%81+%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84+%D9%88%D8%A7%D9%84%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1+%D9%84%D9%88+%D8%B3%D9%85%D8%AD%D8%AA%D8%9F&type=phone_number&app_absent=0"
+                >01146184055
+                <span style="color: var(--olive-green)">＋</span></a
+              >
+            </li>
+            <li>info@heavenpergolas.com</li>
+            <li><address>القليوبية, مصر</address></li>
+          </ul>
+          <h3>تابعنا</h3>
+          <ul class="socials">
+            <a href="https://www.facebook.com/heavenpergolas" target="_blank">
+              <li>
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"
+                    />
+                  </g>
+                </svg>
+              </li>
+            </a>
+            <a
+              href="https://wa.me/201019011242?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%0A%D8%B9%D9%86%D8%AF%D9%8A%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D8%A7%D9%84%D8%A8%D8%B1%D8%AC%D9%88%D9%84%D8%A7%D8%AA%0A%D9%85%D9%85%D9%83%D9%86%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D9%88%D8%A7%D9%84%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1%20%D9%84%D9%88%20%D8%B3%D9%85%D8%AD%D8%AA%D8%9F"
+            >
+              <li>
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 455.731 455.731"
+                  xml:space="preserve"
+                  fill="#000000"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <g>
+                        <path
+                          style="fill: currentColor"
+                          d="M68.494,387.41l22.323-79.284c-14.355-24.387-21.913-52.134-21.913-80.638 c0-87.765,71.402-159.167,159.167-159.167s159.166,71.402,159.166,159.167c0,87.765-71.401,159.167-159.166,159.167 c-27.347,0-54.125-7-77.814-20.292L68.494,387.41z M154.437,337.406l4.872,2.975c20.654,12.609,44.432,19.274,68.762,19.274 c72.877,0,132.166-59.29,132.166-132.167S300.948,95.321,228.071,95.321S95.904,154.611,95.904,227.488 c0,25.393,7.217,50.052,20.869,71.311l3.281,5.109l-12.855,45.658L154.437,337.406z"
+                        ></path>
+                        <path
+                          style="fill: currentColor"
+                          d="M183.359,153.407l-10.328-0.563c-3.244-0.177-6.426,0.907-8.878,3.037 c-5.007,4.348-13.013,12.754-15.472,23.708c-3.667,16.333,2,36.333,16.667,56.333c14.667,20,42,52,90.333,65.667 c15.575,4.404,27.827,1.435,37.28-4.612c7.487-4.789,12.648-12.476,14.508-21.166l1.649-7.702c0.524-2.448-0.719-4.932-2.993-5.98 l-34.905-16.089c-2.266-1.044-4.953-0.384-6.477,1.591l-13.703,17.764c-1.035,1.342-2.807,1.874-4.407,1.312 c-9.384-3.298-40.818-16.463-58.066-49.687c-0.748-1.441-0.562-3.19,0.499-4.419l13.096-15.15 c1.338-1.547,1.676-3.722,0.872-5.602l-15.046-35.201C187.187,154.774,185.392,153.518,183.359,153.407z"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyrights">
+          <p>All rights reserved to <span>HEAVEN</span> Company &copy;</p>
+        </div>
+      </div>
+    </footer>
+    <div class="slider full-page-slider hidden">
+      <div class="main-overlay hidden">
+        <div class="close"><img src="imgs/close.png" alt="" /></div>
+      </div>
+      <div class="overflow-container">
+        <div class="slider__container"></div>
+      </div>
+      <div class="slider__btns">
+        <button class="btn__right down-arrow">▶</button>
+        <button class="btn__left down-arrow">◀</button>
+      </div>
+      <div class="dots"></div>
+    </div>
+    <a class="go-up hidden" href="#">&uarr;</a>
+    <div class="sticky-socials">
+      <ul class="socials">
+        <li>
+          <a href="https://www.facebook.com/" target="_blank">
+            <svg
+              fill="currentColor"
+              width="30px"
+              height="30px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M12 2.03998C6.5 2.03998 2 6.52998 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.84998C10.44 7.33998 11.93 5.95998 14.22 5.95998C15.31 5.95998 16.45 6.14998 16.45 6.14998V8.61998H15.19C13.95 8.61998 13.56 9.38998 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.9164 21.5878 18.0622 20.3855 19.6099 18.57C21.1576 16.7546 22.0054 14.4456 22 12.06C22 6.52998 17.5 2.03998 12 2.03998Z"
+                />
+              </g>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" class="label">
+            <p class="facebook-label">facebook</p>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://wa.me/201019011242?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%0A%D8%B9%D9%86%D8%AF%D9%8A%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D8%A7%D9%84%D8%A8%D8%B1%D8%AC%D9%88%D9%84%D8%A7%D8%AA%0A%D9%85%D9%85%D9%83%D9%86%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D9%88%D8%A7%D9%84%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1%20%D9%84%D9%88%20%D8%B3%D9%85%D8%AD%D8%AA%D8%9F"
+            target="_blank"
+          >
+            <svg
+              version="1.1"
+              id="Capa_1"
+              width="30px"
+              height="30px"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 455.731 455.731"
+              xml:space="preserve"
+              fill="#555"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <g>
+                    <path
+                      style="fill: currentColor"
+                      d="M68.494,387.41l22.323-79.284c-14.355-24.387-21.913-52.134-21.913-80.638 c0-87.765,71.402-159.167,159.167-159.167s159.166,71.402,159.166,159.167c0,87.765-71.401,159.167-159.166,159.167 c-27.347,0-54.125-7-77.814-20.292L68.494,387.41z M154.437,337.406l4.872,2.975c20.654,12.609,44.432,19.274,68.762,19.274 c72.877,0,132.166-59.29,132.166-132.167S300.948,95.321,228.071,95.321S95.904,154.611,95.904,227.488 c0,25.393,7.217,50.052,20.869,71.311l3.281,5.109l-12.855,45.658L154.437,337.406z"
+                    ></path>
+                    <path
+                      style="fill: currentColor"
+                      d="M183.359,153.407l-10.328-0.563c-3.244-0.177-6.426,0.907-8.878,3.037 c-5.007,4.348-13.013,12.754-15.472,23.708c-3.667,16.333,2,36.333,16.667,56.333c14.667,20,42,52,90.333,65.667 c15.575,4.404,27.827,1.435,37.28-4.612c7.487-4.789,12.648-12.476,14.508-21.166l1.649-7.702c0.524-2.448-0.719-4.932-2.993-5.98 l-34.905-16.089c-2.266-1.044-4.953-0.384-6.477,1.591l-13.703,17.764c-1.035,1.342-2.807,1.874-4.407,1.312 c-9.384-3.298-40.818-16.463-58.066-49.687c-0.748-1.441-0.562-3.19,0.499-4.419l13.096-15.15 c1.338-1.547,1.676-3.722,0.872-5.602l-15.046-35.201C187.187,154.774,185.392,153.518,183.359,153.407z"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </a>
+
+          <a
+            href="https://wa.me/201019011242?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%0A%D8%B9%D9%86%D8%AF%D9%8A%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D8%A7%D9%84%D8%A8%D8%B1%D8%AC%D9%88%D9%84%D8%A7%D8%AA%0A%D9%85%D9%85%D9%83%D9%86%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D9%88%D8%A7%D9%84%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1%20%D9%84%D9%88%20%D8%B3%D9%85%D8%AD%D8%AA%D8%9F"
+            target="_blank"
+            class="label"
+          >
+            <p class="whatsapp-label">whatsapp</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,204 @@
+.contact {
+  background-color: var(--ivory-white);
+}
+
+.contact .main-component {
+  margin-bottom: 70px;
+}
+
+.contact .container {
+  display: flex;
+  gap: 20px;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+  gap: 30px;
+
+  background-color: var(--rich-walnut);
+  color: white;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.contact form label {
+  margin-bottom: 10px;
+}
+
+.contact form > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact form input,
+.contact form textarea {
+  padding: 15px;
+
+  border-radius: 5px;
+  outline: none;
+  border: none;
+
+  font-size: 17px;
+  transition: 0.2s;
+}
+
+.contact form input:not(input[type="submit"]):focus,
+.contact form textarea:focus {
+  outline: 2px solid var(--olive-green);
+}
+
+.sumbit input[type="submit"] {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: inherit;
+  background-color: var(--olive-green);
+  transition: 0.2s;
+}
+
+.sumbit input[type="submit"]:hover {
+  background-color: #67754e;
+}
+
+.contact textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.contact .contact-methods {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  color: white;
+}
+
+.contact .contact-methods .call-us h3 {
+  margin-bottom: 5px;
+}
+
+.first-two-contact-methods,
+.second-two-contact-methods {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  height: calc(50% - 10px);
+}
+.contact .contact-methods > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--rich-walnut);
+  border-radius: 10px;
+
+  flex-basis: 50%;
+  /* min-width: calc(50% - 10px);
+  max-width: 170px; */
+}
+
+#location {
+  border: 2px solid #a97451b5;
+}
+
+.contact .contact-methods .logo {
+  width: 40px;
+}
+
+.leaflet-popup-content-wrapper {
+  background-color: var(--charcoal-grey) !important;
+  border-radius: 5px !important;
+  color: var(--ivory-white) !important;
+  border-left: 5px solid var(--cycling-color) !important;
+  padding-right: 0.6rem !important;
+  font-family: var(--main-arabic-font);
+  font-size: 15px;
+}
+
+.leaflet-popup-close-button {
+  color: var(--ivory-white) !important;
+  font-weight: bold !important;
+}
+
+.leaflet-popup-tip {
+  background-color: var(--charcoal-grey) !important;
+}
+.leaflet-popup-tip-container {
+  z-index: 9 !important;
+}
+
+@media (max-width: 1200px) {
+  .contact .container {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .contact form,
+  .contact .contact-methods > div {
+    flex-basis: 100%;
+  }
+
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+  }
+
+  .contact .contact-methods {
+    height: 500px;
+  }
+}
+
+@media (max-width: 572px) {
+  .contact .container {
+    gap: 0;
+    padding-bottom: 0;
+  }
+
+  .contact {
+    padding-bottom: 0;
+  }
+
+  .contact form,
+  .contact .contact-methods > div {
+    border-radius: 0;
+  }
+
+  .contact .contact-methods {
+    height: 300px;
+    gap: 0;
+  }
+
+  .contact .contact-methods > div {
+    gap: 0;
+  }
+
+  .contact .contact-methods > div > div {
+    border-radius: 0;
+    border: 1px solid white;
+  }
+
+  #location {
+    border: 1px solid white;
+  }
+
+  .contact .contact-methods > div > div .details {
+    font-size: 20px;
+  }
+
+  .contact .contact-methods > div > div:first-of-type .details {
+    font-size: 15px;
+  }
+
+  .contact .contact-methods > div > div h3 {
+    margin-bottom: 12px;
+  }
+}
