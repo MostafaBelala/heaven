@@ -1,5 +1,5 @@
 .sticky-socials {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -69,10 +69,12 @@
 
 .sticky-socials li:first-of-type .label {
   background-color: #1666ce;
+  opacity: 0.9;
 }
 
 .sticky-socials li:last-of-type .label {
   background-color: #1a9146;
+  opacity: 0.9;
 }
 
 .sticky-socials li a {
